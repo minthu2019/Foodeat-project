@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  .text-shadow{
+    text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.4);
+  }
+}
+
+@layer components {
+  .primary-btn{
+    @apply px-4 py-2 bg-primary text-white rounded-full
+  }
+
+  .secondary-btn{
+    @apply px-4 py-2 bg-gray-500 text-white rounded-full
+  }
+}
+
+@layer utilities{
+  .image-shadow{
+    filter: drop-shadow(-6px 8px 15px rgba(0, 0, 0, 0.4));
+  }
+}
